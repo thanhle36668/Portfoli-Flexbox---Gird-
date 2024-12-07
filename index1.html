@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row container">
+        <div class="col col-1">
+            <h1>Hey, I'm a <span class="highlight">Front-End</span> web developer</h1>
+            <p>Hi, I'M Jhon Doe a freelance wed designer from San-Francisco. I help brands turn their ideas into
+                hight quality websites.</p>
+            <a href="" class="cta">Contact</a>
+        </div>
+        <div class="col col-2">
+            <div class="hero-img">
+                <img src="img/profile.png" alt="">
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 60px auto;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .row .col-1 {
+            width: 100%;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .row .col-2 {
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>

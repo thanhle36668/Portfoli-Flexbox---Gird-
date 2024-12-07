@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/** Common CSS **/
+body,
+html {
+    font-family: "Poppins", Arial, Helvetica;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li:hover {
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+:root {
+    --h1: #130F49;
+    --blue: #34A1CD;
+    --dark-purple: #55527C;
+    --grey: #B4B2C5;
+    --pink: #EA4C89;
+    --circle: #F4F3FF;
+    --light-pink: #FFF5F6;
+    --light-purple: #ADA8FF;
+    --light-blue: #E9F9FF;
+}
+
+.container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--h1);
+}
+
+h3 {
+    color: var(--h1);
+
+}
+
+p {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.highlight {
+    color: var(--blue);
+}
+
+/** Navbar **/
+
+.navbar {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand img {
+    display: block;
+}
+
+.navbar .nav-list ul,
+.navbar .social-icons ul {
+    display: flex;
+}
+
+.navbar .nav-list ul li,
+.navbar .social-icons ul li {
+    margin: 0px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--dark-purple);
+}
+
+/** Header Container **/
+.header {
+    margin-top: 0px;
+    height: 100vh;
+}
+
+.header .col-1 {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.header .col-1 p {
+    margin: 50px 0px 30px 0px;
+}
+
+.header .col-1 .cta {
+    width: 100px;
+    padding: 8px 12px;
+    background-color: var(--h1);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.header .col-1 .cta:hover {
+    border: 1 px solid black;
+    background-color: whitesmoke;
+    color: var(--h1);
+    border: 1px solid var(--h1);
+}
+
+.header .col-2 {
+    width: 100%;
+}
+
+.header .col-2 img {
+    display: block;
+    max-width: 80%;
+}
+
+.header .cricle {
+    width: 500px;
+    height: 500px;
+    background-color: var(--circle);
+    border-radius: 50%;
+    position: absolute;
+    top: -35%;
+    right: -18%;
+    z-index: -1;
+}
+
+/**My Skills**/
+.skills .title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skills .title h3 {
+    color: var(--grey);
+}
+
+.skills .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 0px;
+}
+
+.skills .grid-wrapper .grid-box .icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skills .grid-wrapper .grid-box .icon-title img {
+    margin-right: 20px;
+}
+
+.skills .grid-wrapper .grid-box .icon-title h2 {
+    color: var(--h1);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.skills .grid-wrapper .grid-box p .highlight {
+    color: var(--h1);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.skills .grid-wrapper .grid-box {
+    padding: 30px;
+}
+
+.skills .grid-wrapper .grid-box:hover {
+    box-shadow: 0px 0px 30px rgb(164, 157, 157);
+    border-radius: 20px;
+}
+
+/**My Portfolio**/
+.portfolio {
+    position: relative;
+    margin-top: 150px;
+}
+
+.portfolio .title {
+    text-align: left;
+}
+
+.portfolio .title h3 {
+    color: var(--grey);
+}
+
+.portfolio .title .cta-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.portfolio .title .cta-title h4 {
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+
+.portfolio .title .cta-title h4 .highlight {
+    color: var(--pink);
+}
+
+.portfolio .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 30px;
+}
+
+.portfolio .grid-wrapper .grid-box {
+    position: relative;
+}
+
+.portfolio .grid-wrapper .grid-box .hover {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 63%;
+    height: 58%;
+    background-color: var(--dark-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.portfolio .grid-wrapper .grid-box:hover .hover {
+    box-shadow: 0  0 30px rgb(193, 189, 189);
+    transform: scaleX(1);
+}
+
+.portfolio .grid-wrapper .grid-box .hover a {
+    color: var(--pink);
+}
+
+.portfolio .rectangle {
+    width: 600px;
+    height: 300px;
+    background-color: var(--light-pink);
+    position: absolute;
+    top: -6%;
+    right: -18%;
+    z-index: -1;
+}
+
