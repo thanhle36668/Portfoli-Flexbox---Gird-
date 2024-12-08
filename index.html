@@ -282,6 +282,16 @@
     <section class="copyright container">
         <h3></h3>
     </section>
+
+    <!--JS-->
+    <script>
+        let toggleBtn = document.querySelector('.toggle-btn')
+        let navbar = document.querySelector('.navbar')
+
+        toggleBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active-navbar-mobile')
+        })
+    </script>
 </body>
 
 </html>
